@@ -7,4 +7,5 @@
 127.0.0.1	localhost
 255.255.255.255	broadcasthost
 ::1             localhost
-192.168.10.10	www.deals.dev
+192.168.10.10	deals.test
+192.168.10.10   test.test

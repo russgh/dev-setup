@@ -17,25 +17,25 @@ fi
 
 # Make sure we’re using the latest Homebrew.
 brew update
-
 brew install node
 brew install composer
 
-vagrant box add laravel/homestead
+vagrant box add laravel/homestead --provider virtualbox
 
 mkdir ~/code
 mkdir ~/Homestead
 
 git clone https://github.com/laravel/homestead.git ~/Homestead
-cd Homestead
+cd ~/Homestead
 bash init.sh
 
 # Copy Homestead.yaml file at this point
+cp ~/Setup/dev-setup/Homestead.yaml ~/Homestead
 # Copy over hosts file at this point
-
-
+sudo cp ~/Setup/dev-setup/hosts /etc/hosts
 
 cd ~
+
 # Remove outdated versions from the cellar.
 
 brew cleanup
