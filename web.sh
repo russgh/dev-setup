@@ -19,8 +19,25 @@ fi
 brew update
 
 brew install node
+brew install composer
 
+vagrant box add laravel/homestead
+
+mkdir ~/code
+mkdir ~/Homestead
+
+git clone https://github.com/laravel/homestead.git ~/Homestead
+cd Homestead
+bash init.sh
+
+# Copy Homestead.yaml file at this point
+# Copy over hosts file at this point
+
+
+
+cd ~
 # Remove outdated versions from the cellar.
+
 brew cleanup
 
 # npm install -g coffee-script

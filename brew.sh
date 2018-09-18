@@ -63,11 +63,12 @@ brew install python3
 # grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
+# brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
+brew install php
+brew install composer
 
 # Install font tools.
 # brew tap bramstein/webfonttools
@@ -184,4 +185,15 @@ brew cask install --appdir="~/Applications" vagrant
 # brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
 # Remove outdated versions from the cellar.
+
+# Link Cask Apps to Alfred
+brew cask alfred link
+
+# cleanup
+echo Cleaning up Brew installations...
+
+brew update
+brew upgrade
+brew prune
 brew cleanup
+rm -f -r /Library/Caches/Homebrew/*
