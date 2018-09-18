@@ -141,6 +141,7 @@ brew install tree
 brew cask install --appdir="~/Applications" alfred
 brew cask install --appdir="~/Applications" commander-one
 brew cask install --appdir="~/Applications" dropbox
+brew cask install --appdir="~/Applications" caffeine
 brew cask install --appdir="~/Applications" google-chrome
 brew cask install --appdir="~/Applications" handbrake
 brew cask install --appdir="~/Applications" iterm2
