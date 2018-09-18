@@ -1,0 +1,23 @@
+Choose SSH connection type in SequelPro
+
+Now simply fill in the following details:
+MySQL Host
+    127.0.0.1
+Username
+    homestead
+Password
+    secret
+Database
+    homestead
+Port
+    Leave empty (3306 as default)
+SSH Host
+    192.168.10.10 (Or whatever you set yours too in your Homestead.yaml file)
+SSH User
+    vagrant
+SSH Password
+    secret
+SSH Port
+    Leave empty
+Connect using SSL checkbox
+    Leave empty
